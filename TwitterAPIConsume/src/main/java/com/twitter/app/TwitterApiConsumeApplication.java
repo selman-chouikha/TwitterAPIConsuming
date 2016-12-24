@@ -9,9 +9,9 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @Configuration
 @EnableAutoConfiguration
-@EnableJpaRepositories({"com.twitter.controller","com.twitter.model","com.twitter.app"})
-@EntityScan({"com.twitter.controller","com.twitter.model","com.twitter.app"})
-@ComponentScan({"com.twitter.controller","com.twitter.model","com.twitter.app"})
+@EnableJpaRepositories({"com.twitter.controller","com.twitter.model","com.twitter.app","com.twitter.view"})
+@EntityScan({"com.twitter.controller","com.twitter.model","com.twitter.app","com.twitter.view"})
+@ComponentScan({"com.twitter.controller","com.twitter.model","com.twitter.app","com.twitter.view"})
 public class TwitterApiConsumeApplication {
 
 	public static void main(String[] args) {
