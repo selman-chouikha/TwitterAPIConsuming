@@ -1,7 +1,6 @@
 package com.twitter.model;
 
 import java.sql.Time;
-import java.time.DayOfWeek;
 import java.time.Month;
 import java.time.Year;
 
@@ -17,9 +16,9 @@ public class CustomDate {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private long id;
 	
-	private DayOfWeek jour;
-	private Month mois;
-	private Year annee;
+	private int jour;
+	private int mois;
+	private int annee;
 	private Time time;
 	
 	
@@ -28,9 +27,7 @@ public class CustomDate {
 		super();
 	}
 
-	public CustomDate(long id, DayOfWeek jour, Month mois, Year annee, Time time) {
-		super();
-		this.id = id;
+	public CustomDate(int jour, int mois, int annee, Time time) {
 		this.jour = jour;
 		this.mois = mois;
 		this.annee = annee;
@@ -45,27 +42,27 @@ public class CustomDate {
 		this.id = id;
 	}
 
-	public DayOfWeek getJour() {
+	public int getJour() {
 		return jour;
 	}
 
-	public void setJour(DayOfWeek jour) {
+	public void setJour(int jour) {
 		this.jour = jour;
 	}
 
-	public Month getMois() {
+	public int getMois() {
 		return mois;
 	}
 
-	public void setMois(Month mois) {
+	public void setMois(int mois) {
 		this.mois = mois;
 	}
 
-	public Year getAnnee() {
+	public int getAnnee() {
 		return annee;
 	}
 
-	public void setAnnee(Year annee) {
+	public void setAnnee(int annee) {
 		this.annee = annee;
 	}
 
